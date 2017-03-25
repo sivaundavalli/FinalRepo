@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="QueryTicketSystem.Home" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Query Ticketing System</title>
+     <link href="Styles/css.css" rel="stylesheet" />
+    <%--<asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>--%>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="clsDivHead">  
+         
+    <div class="clsDivTitle">
+        <table>
+            <tr>
+                <td>
+<img src="Images/Logo.PNG" />
+                </td>
+                <td>
+<asp:Label runat="server" ID="lblTitle" CssClass="clsTitle">Query Ticketing System</asp:Label>
+                </td>
+            </tr>
+        </table>
+        <div class="clsWelcome">
+        <asp:Label ID="lblWelcome" runat="server" Text=""></asp:Label>
+            </div>
+    </div>
+       
+    </div>
+        
+    <div class="clsDivMenu">
+        <div class="clsDivMainMenu">
+            
+    <asp:Menu ID="MainMenu" StaticMenuItemStyle-HorizontalPadding="15" StaticMenuItemStyle-ItemSpacing ="15" 
+        CssClass="clsMainMenu" runat="server" Orientation="Horizontal" Font-Bold="True" Font-Size="20px" ForeColor="White" StaticHoverStyle-ForeColor="#999999">
+           <Items>
+           
+               <asp:MenuItem Text="My Tickets" Selected="true" NavigateUrl="~/StudentHome.aspx"></asp:MenuItem>
+               <asp:MenuItem Text="Tickets" NavigateUrl="#"></asp:MenuItem>
+               <asp:MenuItem Text="Create Instructor" NavigateUrl="~/CreateInstructor.aspx"></asp:MenuItem>
+               <%--<asp:MenuItem Text="Report" NavigateUrl="~/SearchReport.aspx"></asp:MenuItem>--%>
+               <asp:MenuItem Text="Logout" NavigateUrl="~/Login.aspx" ></asp:MenuItem>
+        </Items>
+        
+       
+        <%--<StaticMenuStyle HorizontalPadding="20" />--%>
+        
+    </asp:Menu>
+            
+            </div>
+       <%-- <div class="clsWelcome">
+        <asp:Label ID="lblWelcome" runat="server" Text=""></asp:Label>
+            </div>--%>
+        </div>
+    
+    <div>
+        <asp:ContentPlaceHolder ID="User_ContentPlaceHolder" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+         <div class="clsDivFoot">
+             <span>Copyright © </span>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TicDataSet" targetNamespace="http://tempuri.org/TicDataSet.xsd" xmlns:mstns="http://tempuri.org/TicDataSet.xsd" xmlns="http://tempuri.org/TicDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TicDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="TicDataSet" msprop:Generator_UserDSName="TicDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TicketMasterTbl" msprop:Generator_TableClassName="TicketMasterTblDataTable" msprop:Generator_TableVarName="tableTicketMasterTbl" msprop:Generator_RowChangedName="TicketMasterTblRowChanged" msprop:Generator_TablePropName="TicketMasterTbl" msprop:Generator_RowDeletingName="TicketMasterTblRowDeleting" msprop:Generator_RowChangingName="TicketMasterTblRowChanging" msprop:Generator_RowEvHandlerName="TicketMasterTblRowChangeEventHandler" msprop:Generator_RowDeletedName="TicketMasterTblRowDeleted" msprop:Generator_RowClassName="TicketMasterTblRow" msprop:Generator_UserTableName="TicketMasterTbl" msprop:Generator_RowEvArgName="TicketMasterTblRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Ticket_ID" msprop:Generator_ColumnVarNameInTable="columnTicket_ID" msprop:Generator_ColumnPropNameInRow="Ticket_ID" msprop:Generator_ColumnPropNameInTable="Ticket_IDColumn" msprop:Generator_UserColumnName="Ticket_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="Ticket_Title" msprop:Generator_ColumnVarNameInTable="columnTicket_Title" msprop:Generator_ColumnPropNameInRow="Ticket_Title" msprop:Generator_ColumnPropNameInTable="Ticket_TitleColumn" msprop:Generator_UserColumnName="Ticket_Title" type="xs:string" minOccurs="0" />
+              <xs:element name="Created_dt" msprop:Generator_ColumnVarNameInTable="columnCreated_dt" msprop:Generator_ColumnPropNameInRow="Created_dt" msprop:Generator_ColumnPropNameInTable="Created_dtColumn" msprop:Generator_UserColumnName="Created_dt" type="xs:string" minOccurs="0" />
+              <xs:element name="Updated_dt" msprop:Generator_ColumnVarNameInTable="columnUpdated_dt" msprop:Generator_ColumnPropNameInRow="Updated_dt" msprop:Generator_ColumnPropNameInTable="Updated_dtColumn" msprop:Generator_UserColumnName="Updated_dt" type="xs:string" minOccurs="0" />
+              <xs:element name="Student_ID" msprop:Generator_ColumnVarNameInTable="columnStudent_ID" msprop:Generator_ColumnPropNameInRow="Student_ID" msprop:Generator_ColumnPropNameInTable="Student_IDColumn" msprop:Generator_UserColumnName="Student_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="Instructor_ID" msprop:Generator_ColumnVarNameInTable="columnInstructor_ID" msprop:Generator_ColumnPropNameInRow="Instructor_ID" msprop:Generator_ColumnPropNameInTable="Instructor_IDColumn" msprop:Generator_UserColumnName="Instructor_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
